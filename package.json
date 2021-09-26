@@ -1,0 +1,19 @@
+{
+  "name": "solution_to_maxwell_interview_exercise_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abideen11/solution_to_maxwell_interview_exercise_02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abideen11/solution_to_maxwell_interview_exercise_02/issues"
+  },
+  "homepage": "https://github.com/abideen11/solution_to_maxwell_interview_exercise_02#readme"
+}
