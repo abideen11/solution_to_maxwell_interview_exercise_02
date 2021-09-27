@@ -31,6 +31,7 @@ If Node.js is installed, the output will start with `<v>`, if not, please go to 
 #### 2. Click the green 'Code' button, then clicking the squares stacking on each other icon to copy the link
 
 #### 3. Go to your terminal 
+"Windows: If your operating system is Windows, you should use the Git Bash terminal. Please go to this [website](https://git-scm.com/) to download Git, the Git Bash terminal can be utilized after the download."
 
 #### 4. Clone the repository by entering git clone, then pasting the link that was gotten in step 2
 `git clone <link>`
