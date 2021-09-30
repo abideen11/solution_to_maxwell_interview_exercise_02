@@ -79,18 +79,16 @@ const priceCalculator = (items) => {
     if (item.salePrice === "N/A") {
       item.priceTotal += parseFloat(item.unitPrice) * item.quantity;
     } else {
-      let itemQuantity = item.quantity;
-
-      while (itemQuantity >= item.saleQuantity) {
-        item.priceTotal += parseFloat(item.salePrice);
+      if (item.quantity >= item.saleQuantity) {
+        item.priceTotal +=
+          parseFloat(item.salePrice) *
+            Math.floor(item.quantity / item.saleQuantity) +
+          parseFloat(item.unitPrice) * (item.quantity % item.saleQuantity);
         totalSavings +=
           parseFloat(item.unitPrice) * item.saleQuantity -
           parseFloat(item.salePrice);
-        itemQuantity -= item.saleQuantity;
-      }
-
-      if (itemQuantity > 0) {
-        item.priceTotal += parseFloat(item.unitPrice) * itemQuantity;
+      } else {
+        item.priceTotal += parseFloat(item.unitPrice) * item.quantity;
       }
     }
     totalPrice += item.priceTotal;
